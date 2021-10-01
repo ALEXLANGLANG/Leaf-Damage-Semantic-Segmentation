@@ -1,0 +1,52 @@
+data:
+  species: [onoclea-sensibilis-herbivory, quercus-bicolor-herbivory, quercus-lobata]
+  data_release: '1.0'
+  files:
+    root:  [.., .., .., data, leaves, __species]
+    input_subdir: [images]
+    label_subdir: [releases, _data_release, other_formats, semantic-mask, masks]
+    info_subdir: [releases, _data_release, annotations]
+    label_ids_file: [releases, _data_release, other_formats, semantic-mask, class_mapping.csv]
+  dir_cache_tiles: null #'../../'
+  dir_process_info: '../../data/stats/process_info'
+model:
+  tile_width: 512
+  tile_height: 512
+  tile_margin: 0
+  dropout: False
+  batch_normalization: False
+
+experiment:
+  files:
+    root: [.., .., experiments, _id]
+    info_subdir: [info]
+    weights_subdir: [weights]
+    logs_subdir: [logs]
+    config_file: config.yml
+    partition_file: partition.json
+    training_subdir: [training]
+    validation_subdir: [validation]
+    testing_subdir: [testing]
+    label_subdirs: [labels, scores]
+    performance_file: performance.json
+  partition:
+    training: 0.6
+    validation: 0.1
+  training:
+    batch_size: 1
+    learning_rate: 1.e-3
+    plateau_lr_reduction: 0.2
+    momentum: 0.9
+    decay: 0.0001
+    decay_start_iteration: 15000
+    num_gpus: 1
+    load_weights_from_epoch: null
+    init_epoch: 0
+    epochs: 50
+    patience: 8
+    loss_type: 1
+    optimizer: adam
+    default_workers: 0
+    verbosity_level: 1
+    focal_loss_alpha: 0.25
+    focal_loss_gamma: 2.0
