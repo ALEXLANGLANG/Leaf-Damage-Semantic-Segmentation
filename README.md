@@ -8,9 +8,9 @@
 3. In PyCharm,  run run.py
 4. Process the image
     1) Select a single image or select all images in dataset
-    1) crop the image
-    2) remove the area with noise
-    3) adjust the Ostu's threshold and remove small holes or objects to clear the background
+    1) Crop the image
+    2) Remove the area with noise
+    3) Adjust the Ostu's threshold and remove small holes or objects to clear the background
     4) Save and next
    
 Select images|
