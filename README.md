@@ -1,6 +1,7 @@
 # Leaf Damage Semantic Segmentation
 
 ## LeavesImageEditor
+This editor 
 ### Steps
 1. ```python 
    pip install -r requirements.txt
