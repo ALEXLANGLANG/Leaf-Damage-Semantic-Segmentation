@@ -27,8 +27,8 @@ Save the clean data and go next|
 ![sample_clean](https://user-images.githubusercontent.com/49976598/135553658-4ff8255f-c3dd-40b0-a7e0-1880dd94062a.jpg)
 
 ## Copy/paste data augmentation 
-This section will be published later
+This section will be released later
 
 
 ## Performance
-This section will be published later
+This section will be released later
