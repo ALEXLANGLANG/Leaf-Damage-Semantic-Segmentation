@@ -1,7 +1,7 @@
 # Leaf Damage Semantic Segmentation
 
-## LeavesImageEditor
-This editor helps us to decrease the class imbalance ratio (negative pixels/positive pixels) to 205 from 415. It only takes us 4~6s to process one image which is acceptable in indutries where people spend a few minitues annotating one image. 
+## Data Cleaning - LeavesImageEditor
+This editor helps us to clean the data and decrease the class imbalance ratio (negative pixels/positive pixels) to 205 from 415. It only takes us 4~6s to process one image which is acceptable in indutries where people spend a few minitues annotating one image. 
 ### Steps
 1. ```python 
    pip install -r requirements.txt
